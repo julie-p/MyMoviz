@@ -5,11 +5,6 @@ var movieModel = require('../models/movies');
 
 var myApi = 'a7428099a225b55929d1dab155bd1ed9';
 
-/* GET home page. */
-/* router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-}); */
-
 router.get('/new-movies', async function(req, res, next) {
 
   var result = await request('GET', `https://api.themoviedb.org/3/discover/movie?api_key=${myApi}&language=fr-FR&region=FR&sort_by=popularity.desc&certification_country=France&include_adult=false&include_video=false&page=1&release_date.lte=2020-01-01`)

@@ -86,7 +86,7 @@ function App() {
     return (
       <ListGroupItem>
         <ListGroupItemText onClick={() => handleClickDeleteMovie(movie.name)}>
-        <img width="25%" src={movie.img} alt={movie.overview}/> {movie.name}
+        <img width="40%" src={movie.img} alt={movie.overview}/> {movie.name}
         </ListGroupItemText>
       </ListGroupItem>
     )
